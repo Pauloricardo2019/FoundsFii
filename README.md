@@ -9,4 +9,8 @@
 #### First, after downloading the source code, open the spreadsheet that is at the root of the project and enter in the lines which branches you would like to buy.
 #### Now, just run the code in the path cmd/main.go, and that's it, the system will generate another worksheet at the root of the project, it will contain the members with the main information, and it will also be listed in top down order from best to worst faithful
 
-![Alt Text](https://imgur.com/a/qT9GNJS)
+## Stacks And Concepts
+#### Golang, Multiple Threads, Regex, Web Scraping, Spreadsheet
+
+### flowchart
+![flowchart](https://raw.githubusercontent.com/Pauloricardo2019/WhatsTheBestFii-/main/untitled.png)
