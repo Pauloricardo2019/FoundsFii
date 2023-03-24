@@ -1,4 +1,4 @@
-# WhatsTheBestFii?
+# FoundsFii
 
 ## Purpose of the project.
 #### This application has the purpose of showing which are the best faithful based on the P/VPA and the D.Y. the data is based on the foundExplorer website.
