@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"net/http"
-	"sync"
 )
 
 type fundsExplorerProvider struct {
@@ -15,8 +14,7 @@ func NewFundsExplorerProvider() *fundsExplorerProvider {
 	return &fundsExplorerProvider{}
 }
 
-func (fundsExplorerProvider) GetInfos(code string, group *sync.WaitGroup) (*string, error) {
-	defer group.Done()
+func (fundsExplorerProvider) GetInfos(code string) (*string, error) {
 
 	urlPath := fmt.Sprintf("%s%s", constants.URL, code)
 
