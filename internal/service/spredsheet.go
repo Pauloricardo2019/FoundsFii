@@ -70,7 +70,7 @@ func (spreadsheetService) CreateSpreedsheet(fiis []model.Fii, sheet *xlsx.Sheet)
 		g.Go(func() error {
 			mu.Lock()
 			r := sheet.AddRow()
-			r.WriteStruct(&fii, len(header))
+			r.WriteStruct(&fii, -1)
 			mu.Unlock()
 			return nil
 		})

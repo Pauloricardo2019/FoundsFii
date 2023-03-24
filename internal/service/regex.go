@@ -26,7 +26,6 @@ func (r *regexService) SeparateByGroup(values string) (*model.Fii, error) {
 	r.init()
 
 	matches := re.FindStringSubmatch(values)
-
 	groups := re.SubexpNames()
 	liquidez := r.getMatchedValueByIdentifier("Liquidez", matches, groups)
 	ultRend := r.getMatchedValueByIdentifier("UltimoRendimento", matches, groups)

@@ -2,6 +2,7 @@ package facade
 
 import (
 	"WhatsTheBestFii/internal/model"
+	"fmt"
 	"github.com/tealeg/xlsx"
 )
 
@@ -38,7 +39,7 @@ func (p *processFiiFacade) Process(fileFii *xlsx.Sheet) error {
 		if err != nil {
 			return err
 		}
-
+		fmt.Println("Fii: ", value)
 		fii, err := p.regexService.SeparateByGroup(*infos)
 		if err != nil {
 			return err
